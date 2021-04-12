@@ -1,4 +1,4 @@
-Smart Recruiters API
+<h2>Smart Recruiters API</h2>
 
 
 USEFUL LINKS:</br>
