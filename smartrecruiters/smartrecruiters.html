@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Recruiters</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/js/smartrecruiters.js"></script>
+        <script src="/js/filtertable.js"></script>
+        <link rel="stylesheet" href="/css/smartrecruiters.css">
+    </head>
+    <body>
+        <div class="table-filters">
+            <input class="filter" type="text" data-filter-col="0,1" placeholder="Search by title, expertise">
+            <select class="filter" id="department" name="department" data-filter-col="2"></select>
+            <select class="filter" id="brands" name="brands" data-filter-col="3"></select>
+            <select class="filter" id="locations" name="locations" data-filter-col="4"></select>
+            <div class="filter">
+                <input type="checkbox" data-filter-col="5" data-filter-val="true">
+                <label class="true-title">Employees can work remotely</label>
+            </div>
+        </div>
+        <table id="data" class="smartRecruiters">
+            <thead>
+                <tr>
+                    <th class="title">JOB TITLE</th>
+                    <th class="title">TYPE OF EMPLOYMENT</th>
+                    <th class="title">DEPARTMENT</th>
+                    <th class="title">BRAND</th>
+                    <th class="title">LOCATION</th>
+                    <th class="title hidden">REMOTE</th>
+                    <th class="title">PUBLISHED SINCE</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>
